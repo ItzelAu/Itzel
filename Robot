@@ -1,0 +1,52 @@
+package robot;
+import java.applet.Applet;
+import java.awt.*;
+
+/**
+ *
+ * @author itzel
+ */
+public class Robot extends Applet{
+
+    /**
+     * @param args the command line arguments
+     */
+     public void paint(Graphics e) {
+         //cabeza
+         e.setColor(Color.gray);
+         e.fillRect(250, 100, 100, 100);
+         // ojos
+         e.setColor(Color.white);
+         e.fillOval(270, 130, 20, 20);
+         e.setColor(Color.white);
+         e.fillOval(310, 130, 20, 20);
+         //boca
+          e.setColor(Color.black);
+         e.fillRect(280, 170, 10, 10);
+         e.fillRect(291, 170, 10, 10);
+         e.fillRect(302, 170, 10, 10);
+         e.fillRect(313, 170, 10, 10);
+         //cuerpo
+          e.setColor(Color.black);
+         e.fillRect(200, 200, 200, 300);
+         //brazos
+         e.setColor(Color.gray);
+         e.fillRect(400, 250, 150, 30);
+         e.fillRect(50, 250, 150, 30);
+         //manos
+         e.setColor(Color.black);
+         e.fillOval(40, 240, 50, 50);
+         e.fillOval(510, 240, 50, 50);
+         //pies
+          e.setColor(Color.gray);
+         e.fillRect(330, 500, 30, 150);
+         e.fillRect(240, 500, 30, 150);
+         //antena
+         e.setColor(Color.black);
+         e.fillRect(300, 50, 10, 50);
+         e.setColor(Color.yellow);
+         e.fillOval(295, 48, 20, 20);
+        
+     }       
+}
+
